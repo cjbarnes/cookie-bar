@@ -4,24 +4,68 @@
  * @license LGPL 3.0
  */
 
+/**
+ * Colours used:
+ * #bfcd97 - Light green
+ * #53604f - Dark green
+ * #d1d1d1 - Light grey
+ * #b5b5b5 - Mid grey
+ * #777    - Dark grey
+ * #fff    - White
+ */
+
 /* Main cookie bar element. */
 .cookie-bar {
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #53604f;
+    background: #bfcd97;
+}
 
+/* Override any site-wide font sizes and line heights for p and a elements. */
+.cookie-bar * {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* Main child elements of cookie bar. */
+.cookie-bar-description,
+.cookie-bar-action {
+    display: table-cell;
+    padding: 0.25em 0.5em;
+    vertical-align: middle;
 }
 
 /* Text. */
 .cookie-bar-description {
-
+    padding-right: 1em; /* Extra padding next to the buttons. */
 }
 
 /* Wrapper for the button and link. */
 .cookie-bar-action {
-
+    text-align: center;
 }
 
 /* OK button. */
 .cookie-bar-button {
+    display: inline-block;
+    padding: 0.75em 1em;
+    line-height: 1;
+    text-decoration: none;
+    border-width: 1px 0;
+    border-radius: 1.2em;
+    border-color: #fff transparent #777;
+    color: #777;
+    background: #d1d1d1;
+}
 
+/* OK button - clicked. */
+.cookie-bar-button:active {
+    border-color: #777 transparent;
+    background: #b5b5b5;
 }
 
 /* 'Find out more' link. */
