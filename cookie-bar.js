@@ -1,7 +1,7 @@
 /**
  * Cookie warning script - to comply with EU cookie law. A modified version of
  * Scott Herbert and Dimitri Kourkoulis’s original.
- * @link
+ * @link https://github.com/cjbarnes/cookie-bar
  * @author cJ barnes http://www.cjbarnes.co.uk
  * @license LGPL 3.0
  */
